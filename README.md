@@ -1,7 +1,7 @@
 # Mirror-whisper-frontend
 <img width="1536" height="1024" alt="wireframe" src="https://github.com/user-attachments/assets/f66f3ed0-ab1f-4c51-9e46-8a33e4776fc0" />
 
-<img width="1024" height="1536" alt="erd" src="https://github.com/user-attachments/assets/6d4e0c67-8010-470a-b240-b667d0640cf0" />
+<img width="1024" height="1536" alt="erd" src="https://github.com/user-attachments/assets/0e9c71aa-8ce6-4b5d-80b8-a1eede917338" />
 
 
 
