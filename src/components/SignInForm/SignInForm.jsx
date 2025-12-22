@@ -24,8 +24,7 @@ const SignInForm = () => {
   const handleSubmit = async (evt) => {
     evt.preventDefault();
     try {
-      // This function doesn't exist yet, but we'll create it soon.
-      // It will cause an error right now
+      
       const signedInUser = await signIn(formData);
 
       setUser(signedInUser);
@@ -35,43 +34,59 @@ const SignInForm = () => {
     }
   };
 
-  return (
-    <main>
-      <h1>Sign In</h1>
-      <p>{message}</p>
-      <form autoComplete='off' onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor='email'>Username:</label>
+ return (
+  <main className="auth-page">
+    <section className="auth-card">
+      <h1 className="auth-title">Sign In</h1>
+      <p className="auth-subtitle">Welcome back to Mirror Whisper</p>
+
+      {message && <p className="auth-error">{message}</p>}
+
+      <form className="auth-form" autoComplete="off" onSubmit={handleSubmit}>
+        <div className="field">
+          <label htmlFor="username">Username</label>
           <input
-            type='text'
-            autoComplete='off'
-            id='username'
+            type="text"
+            autoComplete="off"
+            id="username"
             value={formData.username}
-            name='username'
+            name="username"
             onChange={handleChange}
             required
           />
         </div>
-        <div>
-          <label htmlFor='password'>Password:</label>
+
+        <div className="field">
+          <label htmlFor="password">Password</label>
           <input
-            type='password'
-            autoComplete='off'
-            id='password'
+            type="password"
+            autoComplete="off"
+            id="password"
             value={formData.password}
-            name='password'
+            name="password"
             onChange={handleChange}
             required
           />
         </div>
-        <div>
-          <button>Sign In</button>
-          <button onClick={() => navigate('/')}>Cancel</button>
+
+        <div className="auth-actions">
+          <button className="btn">Sign In</button>
+          <button
+            type="button"
+            className="btn-ghost"
+            onClick={() => navigate("/")}
+          >
+            Cancel
+          </button>
         </div>
       </form>
-    </main>
-  );
-};
 
+      <p className="auth-footer">
+        Don’t have an account? <a href="/sign-up">Create one</a>
+      </p>
+    </section>
+  </main>
+);
+
+}
 export default SignInForm;
-
