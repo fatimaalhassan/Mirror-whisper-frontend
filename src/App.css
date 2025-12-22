@@ -369,11 +369,10 @@ body {
   );
   
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  text-shadow:
-    0 2px 8px rgba(0,0,0,0.6),
-    0 0 20px rgba(191,162,107,0.25);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6), 0 0 20px rgba(191,162,107,0.25);
 }
 
 .landing-sub{
