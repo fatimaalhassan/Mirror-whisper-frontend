@@ -20,14 +20,15 @@ const Dashboard = () => {
   }, [user]);
 
 
-  return (
-    <main>
-      <h1>Welcome, {user.username}</h1>
-      <p>
-        Welcome. The mirror sees your strength — tap the apple to hear the truth.”
-      </p>
-    </main>
-  );
+ return (
+  <main className="mirror-container">
+    <div className="mirror-text">
+      <h1 className="welcome-text">Welcome {user.username}</h1>
+      <p className="mirror-subtext">
+Mirror, mirror — your strength is seen. Tap to hear the truth.      </p>
+    </div>
+  </main>
+);
 };
 
 export default Dashboard;

@@ -19,7 +19,7 @@ const Mirror = () => {
 
   return (
     <div className="mirror-page">
-      <h2 className="mirror-title">
+      <h2 className="mirror-heading">
         Mirror, mirror on the wall,<br />
         tell me something nice for today
       </h2>
