@@ -18,7 +18,8 @@ import './App.css';
 
 
 const App = () => {
-  const { user } = useContext(UserContext);
+
+const { user } = useContext(UserContext);
 
 
   return (
