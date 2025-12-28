@@ -83,6 +83,4 @@ https://github.com/fatimaalhassan/Mirror-Whisper-backend.git
 
 No external assets were used in this project.
 rience
-- شش
-- شي
 
